@@ -6,7 +6,19 @@
             {{--About--}}
             <section class="max-w-full">
                 {{--About Header--}}
-                <div class="flex bg-black px-8 py-4">
+                <div class="flex flex-col bg-black/60 px-8 py-4 items-center">
+                    <div class="absolute z-[-10] top-0 w-full">
+                        <video
+                                class="w-full h-auto max-h-[315px] md:max-h-[325px] object-cover"
+                                preload="auto"
+                                muted
+                                autoplay="autoplay"
+                                loop
+                        >
+                            <source src="{{ asset('images/naveed-video.mp4') }}"/>
+                        </video>
+                    </div>
+
                     {{--App Bar--}}
                     <div class="flex min-w-full justify-between items-center">
                         {{--Logo--}}
@@ -67,7 +79,7 @@
                             </div>
 
                             {{--Menue For Mobile--}}
-                            <div class="hidden w-32 absolute bg-black p-4 shadow-lg shadow-gray-50 group-hover:flex flex-col space-y-3 right-0 top-2 rounded-lg">
+                            <div class="hidden w-32 absolute bg-black p-4 shadow-lg shadow-gray-600 group-hover:flex flex-col space-y-3 right-4 top-2 rounded-lg">
                                 <p class="text-gray-400 font-bold uppercase hover:text-red-500 hover:cursor-pointer">
                                     Home</p>
                                 <p class="text-gray-400 font-bold uppercase hover:text-red-500 hover:cursor-pointer">
@@ -81,8 +93,70 @@
                             </div>
                         </div>
                     </div>
+
+                    {{--About Title--}}
+                    <div class="my-20">
+                        <p class="text-5xl text-white uppercase font-bold">About</p>
+                        <div class="flex justify-center mt-5">
+                            <p class="text-gray-400">Home /</p>
+                            <p class="text-white ml-1">About</p>
+                        </div>
+                    </div>
                 </div>
+
                 {{--About Body Hader--}}
+                <div class="flex flex-col space-y-3 md:flex-row md:space-x-12 md:space-y-0 items-center my-5 px-6">
+                    {{--Image--}}
+                    <div class="max-w-lg">
+                        <img class="rounded-md  shadow-lg w-[250px] md:w-[585px]" src="{{ asset('images/naveed-img.jpg') }}"
+                             alt="">
+                    </div>
+
+                    {{--01 Details--}}
+                    <div class="flex flex-col w-full items-center md:items-start">
+                        <div class="flex space-x-6">
+                            <p class="text-red-500 font-bold text-3xl ">
+                                01
+                            </p>
+                            <p class="font-bold text-3xl uppercase">
+                                About me
+                            </p>
+                        </div>
+                        <div class="flex flex-col space-y-3 mt-8">
+                            <p class="font-bold text-2xl max-w-lg md:max-w-2xl text-center md:text-start">
+                                I'm Professional Designer and Front-End Web Developer That Solve Your Problems
+                            </p>
+                            <p class="max-w-lg md:max-w-2xl text-center text-gray-600 md:text-start">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet Amet
+                                minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud ametAmet
+                                minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row w-full space-x-8 mt-8 justify-center md:justify-start">
+                            <div class="flex flex-row max-w-min space-x-4 items-center">
+                                <p class="text-red-500 font-bold text-3xl ">
+                                    08
+                                </p>
+                                <p class="font-bold text-gray-600 text-center">
+                                    Years of Experience
+                                </p>
+                            </div>
+
+                            <div class="flex flex-row max-w-min space-x-4 items-center">
+                                <p class="text-red-500 font-bold text-3xl ">
+                                    100+
+                                </p>
+                                <p class="font-bold text-gray-600 text-center">
+                                    Apps Delivered
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
